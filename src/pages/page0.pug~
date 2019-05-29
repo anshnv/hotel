@@ -1,0 +1,44 @@
+//h1 Компоненты
+.ColorsType
+	embed(src='img/vector.svg' alt='text' height="96" width="96")
+	//img(src='img/icon_contact1920.jpg' alt='textjpg')
+	.layout
+		.layout1
+			.layout1__layoutRectangle
+				.layout1__layoutRectangle__rectangle.layout1__layoutRectangle__rectangle_dark100
+				.layout1__layoutRectangle__rectangle.layout1__layoutRectangle__rectangle_dark75
+				.layout1__layoutRectangle__rectangle.layout1__layoutRectangle__rectangle_dark50
+				.layout1__layoutRectangle__rectangle.layout1__layoutRectangle__rectangle_dark25
+				.layout1__layoutRectangle__rectangle.layout1__layoutRectangle__rectangle_dark05
+				.layout1__layoutRectangle__rectangle.layout1__layoutRectangle__rectangle_purple
+				.layout1__layoutRectangle__rectangle.layout1__layoutRectangle__rectangle_green
+			.layout1__layoutText
+				.layout1__layoutText_bold Dark Shade 100%
+				.layout1__layoutText.layout1__layoutText_normal #1F2041
+				.layout1__layoutText_bold Dark Shade 75%
+				.layout1__layoutText.layout1__layoutText_normal #1F2041
+				.layout1__layoutText_bold Dark Shade 50%
+				.layout1__layoutText.layout1__layoutText_normal #1F2041
+				.layout1__layoutText_bold Dark Shade 25%
+				.layout1__layoutText.layout1__layoutText_normal #1F2041
+				.layout1__layoutText_bold Dark Shade 5%
+				.layout1__layoutText.layout1__layoutText_normal #1F2041
+				.layout1__layoutText_bold Purple
+				.layout1__layoutText.layout1__layoutText_normal #BC9CFF
+				.layout1__layoutText_bold Green
+				.layout1__layoutText.layout1__layoutText_normal #6FCF97
+		.layout2
+			.layout2__style 
+				.layout2__style_H1 H1
+				.layout2__style_H2 H2
+				.layout2__style_H3 H3
+				.layout2__style_body Body				
+			.layout2__text 
+				.text_H1 This one is the sub-section or
+				.text_H1.layout2__textpad_1 widget title
+				.text_H2 Next one is the item title inside
+				.text_H2.layout2__textpad_2 widgets
+				.text_H3.layout2__textpad_3 This is a label or CTA text
+				.layout2__text_body This is the body text which is used for most
+				.layout2__text_body of the design, like paragraphs, lists, etc.
+				

@@ -1,0 +1,17 @@
+<svg xmlns = "http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 96 96" >
+	<style>
+		.color{
+			fill:none;
+		}
+	</style>
+	<g id="Vector">
+		<title>Vector</title>
+		<desc>Иконка</desc>
+		<g id="circle" class="color">
+			<circle cx="46" cy="46" r="22" stroke="#1F2041" stroke-width="2" stroke-opacity="0.25"/>
+			<path d="M 48,46 A10,10 0 0,1 60,42" stroke="#1F2041" stroke-width="2" stroke-opacity="0.25"/>
+			<path d="M 35,42 A17,17 0 0,1 47,53" stroke="#1F2041" stroke-width="2" stroke-opacity="0.25"/>
+		</g>
+		<!-- ... -->
+	</g>
+</svg>

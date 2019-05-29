@@ -1,0 +1,182 @@
+@import '../lib/var';
+@import '../lib/styleText';
+.ColorsType{
+	background: #FFFFFF;
+	width: 71.6rem;
+}
+.padBotVect{
+	padding-bottom: 2rem;
+}
+@font-face{
+    font-family: 'Quicksand-Bold';
+    src: url('./fonts/Quicksand/Quicksand-Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Quicksand-Regular';
+    src: url('./fonts/Quicksand/Quicksand-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Quicksand-Light';
+    src: url('./fonts/Quicksand/Quicksand-Light.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url('./fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+.layout{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+.layout1{
+	display: flex;
+	justify-content: space-between;
+	//background: green;
+	//padding-bottom: 15rem;
+	width: 13.3rem; /*269.26px+149.74px*/
+	padding-left: 7.1rem; /*149.74px*/
+	//padding-top: 1rem;
+}
+.layout1__layoutRectangle{
+	display: flex;
+	flex-direction:column;
+	justify-content:space-between;
+	padding-bottom: 1.5rem;
+	//background: grey;
+}
+.layout1__layoutRectangle__rectangle{
+	width: 3.49rem; /*70px*/
+	height: 3.49rem; /*70px*/
+	border-radius: 0.29rem;/*6px*/
+	//padding-bottom: 0.9rem
+}
+
+
+.layout1__layoutRectangle__rectangle_dark100{
+	background: $DarkShade100;
+}
+.layout1__layoutRectangle__rectangle_dark75{
+	background: $DarkShade75;
+}
+.layout1__layoutRectangle__rectangle_dark50{
+	background: $DarkShade50;
+}
+.layout1__.layoutRectangle__rectangle_dark25{
+	background: $DarkShade25;
+}
+.layout1__.layoutRectangle__rectangle_dark05{
+	background: $DarkShade05;
+}
+.layout1__layoutRectangle__rectangle_purple{
+	background: $Purple;
+}
+.layout1__layoutRectangle__rectangle_green{
+	background: $Green;
+}
+.layout1__layoutText{
+	display: flex;
+	flex-direction:column;
+	width: 7.78rem;
+	padding-top: 0.58rem;
+	font-style: normal;
+	//background: grey;
+	color: #1F2041;
+}
+.layout1__layoutText_bold{
+	font-weight: bold;
+	font-stretch: ultra-condensed;
+	font-size: 0.935rem;/*19px*/
+	line-height: 0.99rem;/*29px*/
+	font-family: Quicksand-Bold;
+	//margin-bottom:-0.25rem;
+	//padding-bottom: -0.28rem;
+}
+.layout1__layoutText_normal{
+	font-weight: normal;
+	padding-bottom: 2.02rem;
+	//font-stretch: expanded;
+	font-size: 0.935rem;/*19px*/
+	line-height: 0.99rem;/*29px*/
+	font-family: Quicksand-Regular;
+}
+.layout2{
+	display: flex;
+	justify-content: flex-start;
+	//background: blue;
+	padding-bottom: 11.2rem;
+	//width: 33rem;
+	padding-right: 9.57rem;
+	
+}
+.layout2__style{
+	display: flex;
+	flex-direction:column;
+	//width: 2.2rem;
+	//padding-left: 11.6rem;
+	//background: grey;
+}
+.layout2__style_H1{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.145rem;
+	font-stretch:semi-expanded;
+	line-height: 1.6rem;/* identical to box height */
+	text-align: right;
+	color: rgba(31, 32, 65, 0.25);
+	padding-bottom: 3.9rem;
+}
+.layout2__style_H2{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-stretch:ultra-expanded ;
+	font-size: 0.9rem;
+	line-height: 1.24rem;/* identical to box height */
+	text-align: right;
+	color: rgba(31, 32, 65, 0.25);
+	padding-bottom: 3.7rem;
+}
+.layout2__style_H3{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.73rem;
+	line-height: 0.9rem;/* identical to box height */
+	text-align: right;
+	text-transform: uppercase;
+	color: rgba(31, 32, 65, 0.25);
+	padding-bottom: 2.3rem;
+}
+.layout2__style_body{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-stretch:expanded;
+	font-size: 0.7rem;
+	line-height: 1.2rem;/* identical to box height, or 171% */
+	text-align: right;
+	color: rgba(31, 32, 65, 0.25);
+}
+.layout2__text{
+	display: flex;
+	flex-direction:column;
+	padding-left: 1.7rem;
+	//background: red;
+}
+.layout2__textpad_1{
+	padding-bottom: 2.4rem;
+}
+
+.layout2__textpad_2{
+	padding-bottom: 2.4rem;
+}
+.layout2__textpad_3{
+	padding-bottom: 2.3rem;
+}
+

@@ -1,0 +1,11 @@
+@import 'mix';
+.text_H1{
+@include StyleText(Montserrat, ultra-expanded, bold, 1.44rem, 1.9rem);
+}
+.text_H2{
+@include StyleText(Montserrat, ultra-expanded, bold, 1.13rem, 1.44rem);
+}
+.text_H3{
+@include StyleText(Montserrat-Bold, ultra-expanded, bold, 0.73rem, 1.5rem);
+text-transform: uppercase;
+}
