@@ -46,7 +46,7 @@
 	display: flex;
 	flex-direction:column;
 	justify-content:space-between;
-	padding-bottom: 1.5rem;
+	padding-bottom: 1.32rem;
 	//background: grey;
 }
 .layout1__layoutRectangle__rectangle{
@@ -82,7 +82,7 @@
 	display: flex;
 	flex-direction:column;
 	width: 7.78rem;
-	padding-top: 0.58rem;
+	padding-top: 0.3rem;
 	font-style: normal;
 	//background: grey;
 	color: #1F2041;
@@ -91,17 +91,17 @@
 	font-weight: bold;
 	font-stretch: ultra-condensed;
 	font-size: 0.935rem;/*19px*/
-	line-height: 0.99rem;/*29px*/
+	line-height: 1.6rem;/*29px*/
 	font-family: Quicksand-Bold;
 	//margin-bottom:-0.25rem;
 	//padding-bottom: -0.28rem;
 }
 .layout1__layoutText_normal{
 	font-weight: normal;
-	padding-bottom: 2.02rem;
+	padding-bottom: 1.65rem;
 	//font-stretch: expanded;
 	font-size: 0.935rem;/*19px*/
-	line-height: 0.99rem;/*29px*/
+	line-height: 1.25rem;/*29px*/
 	font-family: Quicksand-Regular;
 }
 .layout2{
@@ -110,7 +110,7 @@
 	//background: blue;
 	padding-bottom: 11.2rem;
 	//width: 33rem;
-	padding-right: 9.57rem;
+	padding-right: 9.59rem;
 	
 }
 .layout2__style{
@@ -166,7 +166,7 @@
 .layout2__text{
 	display: flex;
 	flex-direction:column;
-	padding-left: 1.7rem;
+	padding-left: 1.55rem;
 	//background: red;
 }
 .layout2__textpad_1{
