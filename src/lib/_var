@@ -1,4 +1,5 @@
 /*цвета*/
+$PageBackground: #FFFFFF;
 $DarkShade100: #1F2041;
 $DarkShade75: rgba(31, 32, 65, 0.75);
 $DarkShade50: rgba(31, 32, 65, 0.5);
