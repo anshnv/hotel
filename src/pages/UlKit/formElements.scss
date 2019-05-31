@@ -1,0 +1,15 @@
+/*PerfectPixel: 8 809 */
+@import '../../lib/var';
+@import '../../lib/styleText';
+@import '../../lib/fonts';
+.FormElements{
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-between;
+	background: yellow;/*$PageBackground;*/
+	width: 72rem;	
+}
+.PageMarginBot{
+	height:1.4925373134rem;
+	color: #00ffff ;
+}

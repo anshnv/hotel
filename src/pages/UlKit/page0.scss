@@ -1,12 +1,12 @@
-@import '../lib/var';
-@import '../lib/styleText';
-@import '../lib/fonts';
+@import '../../lib/var';
+@import '../../lib/styleText';
+@import '../../lib/fonts';
 .ColorsType{
-	background: $PageBackground;
-	width: 71.6rem;
+	background: yellow;/*$PageBackground;*/
+	width: 72rem;
 }
 .padBotVect{
-	padding-bottom: 2rem;
+	padding-bottom: 1.81rem;
 }
 /*@font-face{
     font-family: 'Quicksand-Bold';
@@ -33,6 +33,7 @@
 	display: flex;
 	flex-direction:row;
 	justify-content: space-between;
+	padding-bottom: 6rem;
 }
 .layout1{
 	display: flex;
@@ -40,7 +41,7 @@
 	//background: green;
 	//padding-bottom: 15rem;
 	width: 13.3rem; /*269.26px+149.74px*/
-	padding-left: 7.1rem; /*149.74px*/
+	padding-left: 7.5rem; /*149.74px*/
 	//padding-top: 1rem;
 }
 .layout1__layoutRectangle{
@@ -178,6 +179,6 @@
 	padding-bottom: 2.3rem;
 }
 .layout2__textpad_3{
-	padding-bottom: 1.85rem;
+	padding-bottom: 1.87rem;
 }
 

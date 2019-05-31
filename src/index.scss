@@ -1,7 +1,16 @@
 body{
-background: grey;
+	display: flex;
+	background: grey;
+}
+.layoutPage{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: auto;
+}
+.margin-rightPage{
+	margin-right: 2.5rem;
 }
 
-
-@import './pages/page0';
-@import './pages/formElements';
+@import './pages/UlKit/page0';
+@import './pages/UlKit/formElements';
