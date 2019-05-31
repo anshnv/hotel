@@ -1,9 +1,19 @@
 include ../../lib/fields/_mix-fieldText
 
-.FormElements
+.formElements
 	embed(src='img/vector.svg' alt='text' height="106" width="106")
-	.text_body
-		+fieldText('Text Field', 'text', 'email', 'Email', '16 rem')
-//	p Text Field
-//	input(type='text' name='email' value='Email' size='16 rem')
-	
+	.formElements__layout3
+		.formElements__layout3__pad1
+			.formElements__layout3__column
+				+fieldText('Text Field', 'Default', 'text', 'email', 'Email')
+		.formElements__layout3__pad2
+			.formElements__layout3__column
+				p colomn2
+		.formElements__layout3__pad3
+			.formElements__layout3__column
+			p colomn3
+	.formElements__layout2
+		.formElements__layout2__column
+			P контейнер 2 colomn1
+		.formElements__layout2__column
+			P контейнер 2 colomn2

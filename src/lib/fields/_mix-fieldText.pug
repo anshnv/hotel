@@ -1,6 +1,8 @@
-mixin fieldText(ftext, ftype, fname, ftextDefault, fwidth)
-	.text_H3= ftext
-	input(type=ftype name=fname value=ftextDefault size=fwidth)
+mixin fieldText(ftext1, ftext2, ftype, fname, ftextDefault)
+	.layoutText
+		.text_H3= ftext1
+		.text_H3.layoutTextDef= ftext2
+	input(type=ftype name=fname value=ftextDefault)
 	
 //type: range|text|email|date|number textDefault: email| This is pretty awesome|ДД:ММ:ГГ|
 	

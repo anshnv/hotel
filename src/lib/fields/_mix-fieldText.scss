@@ -1,4 +1,23 @@
-input {
-  font-size: 16rem;
-  
+.layoutText{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: auto;
+}
+p{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.6rem;
+	//line-height: 15px;
+/* identical to box height */
+
+	text-align: right;
+	text-transform: uppercase;
+
+}
+.layoutTextDef{
+	color: $DarkShade50;
+	//line-height: 2.2rem;
 }
