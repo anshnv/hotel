@@ -1,8 +1,18 @@
+//include ../../lib/_var
 mixin fieldText(ftext1, ftext2, ftype, fname, ftextDefault)
 	.layoutText
 		.text_H3= ftext1
-		.text_H3.layoutTextDef= ftext2
+		.text_H3-normal.layoutTextDef= ftext2
 	input(type=ftype name=fname value=ftextDefault)
 	
 //type: range|text|email|date|number textDefault: email| This is pretty awesome|ДД:ММ:ГГ|
-	
+mixin fieldSelect(ftext1, ftext2, ftextDefault, foptions)
+	.layoutText
+		.text_H3= ftext1
+		.text_H3-normal.layoutTextDef= ftext2
+	select
+		option(disabled=ftextDefault)
+		-
+		var foptions = ['1']
+		each foption in foptions
+			option(value=foption) -

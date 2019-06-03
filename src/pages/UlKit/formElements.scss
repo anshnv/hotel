@@ -34,11 +34,23 @@ input[type="text"] {
 	/*line-height: 2.2rem;*/
 	font-family: Montserrat; /*Стиль шрифта*/
 }
+select {
+	height: 2.2rem; /* высота на свое усмотрение*/
+	width: 16rem; /*ширина на свое усмотрение*/
+	padding-left: 0.7rem;
+	color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
+	font-size: 0.7rem; /*Размер шрифта*/
+	/*line-height: 2.2rem;*/
+	font-family: Montserrat; /*Стиль шрифта*/
+}
 /*Контейнер3 столбец1*/
 
 .formElements__layout3__pad1{
 	padding-left: 7.05rem;/*141px*/
-	padding-top: 1.6rem;/*141px*/
+	padding-top: 1.6rem;/*143px*/
+}
+.formElements__layout3__pad1-bott{
+	padding-bottom: 0.8rem;/*227.44px-176px-18px*/
 }
 /*________________________________________Контейнер3 столбец1*/
 

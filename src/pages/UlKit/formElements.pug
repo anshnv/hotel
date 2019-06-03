@@ -6,6 +6,10 @@ include ../../lib/fields/_mix-fieldText
 		.formElements__layout3__pad1
 			.formElements__layout3__column
 				+fieldText('Text Field', 'Default', 'text', 'email', 'Email')
+				.formElements__layout3__pad1-bott
+				+fieldText('Text Field', 'Hover/Focus', 'text', '', 'This is pretty awesome')
+				.formElements__layout3__pad1-bott
+				+fieldSelect('Dropdown', 'Default', 'Сколько гостей', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 		.formElements__layout3__pad2
 			.formElements__layout3__column
 				p colomn2
