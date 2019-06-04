@@ -1,3 +1,7 @@
+@import '../../lib/fields/butFieldDropdown';
+@import '../../lib/fields/FieldText';
+/*@import '../../lib/var';*/
+
 .layoutText{
 	display: flex;
 	flex-direction: row;
@@ -5,7 +9,7 @@
 	justify-content: space-between;
 	width: auto;
 }
-p{
+/*p{
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
@@ -13,10 +17,10 @@ p{
 	//line-height: 15px;
 /* identical to box height */
 
-	text-align: right;
-	text-transform: uppercase;
+	/*text-align: right;
+	/*text-transform: uppercase;
 
-}
+}*/
 /*.text_H3-normal{
 	font-style: normal;
 	font-weight: normal;
@@ -25,4 +29,34 @@ p{
 .layoutTextDef{
 	color: $DarkShade50;
 	//line-height: 2.2rem;
+}
+.layoutFieldDropdown{
+	display: flex;
+	flex-direction: row;
+	width: $FieldTextWidth;
+	//background: grey;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2rem;  /* Preferred icon size 24px*/
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }

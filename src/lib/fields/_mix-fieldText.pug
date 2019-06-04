@@ -1,8 +1,9 @@
 //include ../../lib/_var
-mixin fieldText(ftext1, ftext2, ftype, fname, ftextDefault)
+mixin fieldsText(ftext1, ftext2)
 	.layoutText
-		.text_H3= ftext1
-		.text_H3-normal.layoutTextDef= ftext2
+			.text_H3= ftext1
+			.text_H3-normal.layoutTextDef= ftext2
+mixin fieldText(ftype, fname, ftextDefault)
 	input(type=ftype name=fname value=ftextDefault)
 	
 //type: range|text|email|date|number textDefault: email| This is pretty awesome|ДД:ММ:ГГ|
@@ -14,3 +15,8 @@ mixin fieldSelect(ftext1, ftext2, ftextDefault, foptions)
 		option(value= ftextDefault)= ftextDefault
 		each foption in foptions
 			option.value= foption
+			
+mixin fieldDropdown(ftype)
+	.layoutFieldDropdown
+		+fieldText('text', 'dropdown', 'Сколько гостей', '$FieldDropdowWidth')
+		button(type=ftype).material-icons expand_more

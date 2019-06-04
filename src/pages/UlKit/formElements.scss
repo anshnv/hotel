@@ -2,13 +2,15 @@
 @import '../../lib/var';
 @import '../../lib/styleText';
 @import '../../lib/fields/mix-fieldText';
-//@import '../../lib/fonts';
+@import '../../lib/fields/butFieldDropdown';
+@import '../../lib/fields/FieldText';/*
+/*@import '../../lib/fonts';*/
 .formElements{
 	display: flex; 
 	flex-direction: column;
 	justify-content: space-between;
 	background: yellow;/*$PageBackground;*/
-	width: 72rem;	
+	width: $SheetWidth;	
 	padding-left: 1.5rem;
 	padding-top: 1.5rem;
 }
@@ -27,29 +29,31 @@
 	display: flex; 
 	flex-direction: column;
 }
-input[type="text"] {
+/*input[type="text"] {
 	height: 2.2rem; /* высота на свое усмотрение*/
-	width: 16rem; /*ширина на свое усмотрение*/
-	padding-left: 0.7rem;
-	color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
-	font-size: 0.7rem; /*Размер шрифта*/
+	/*width: 16rem; /*ширина на свое усмотрение*/
+	/*padding-left: 0.7rem;
+	/*color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
+	/*font-size: 0.7rem; /*Размер шрифта*/
 	/*line-height: 2.2rem;*/
-	font-family: Montserrat; /*Стиль шрифта*/
-}
-select {
-	height: 2.2rem; /* высота на свое усмотрение*/
-	width: 16rem; /*ширина на свое усмотрение*/
-	padding-left: 0.7rem;
-	color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
-	font-size: 0.7rem; /*Размер шрифта*/
+	/*font-family: Montserrat; /*Стиль шрифта*/
+	/*background-image: url(img/chevron-down.svg);
+}*/
+/*select {
+/*	height: 2.2rem; /* высота на свое усмотрение*/
+/*	width: 16rem; /*ширина на свое усмотрение*/
+/*	padding-left: 0.7rem;
+/*	color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
+/*	font-size: 0.7rem; /*Размер шрифта*/
 	/*line-height: 2.2rem;*/
-	font-family: Montserrat; /*Стиль шрифта*/
-	-webkit-appearance: none; 
-	-moz-appearance: none;
+/*		font-family: Montserrat; /*Стиль шрифта*/
+/*		-webkit-appearance: none; 
+/*		-moz-appearance: none;
 	appearance: none;       /* удаляем стандартную стрелочку */
-	background-image: url(img/vectorFieldBut1.svg);   /* добовляем произвольное изображение */
-	//background-color: #c7b39b; /* Цвет фона */
-}
+/*		//background-image: url(img/chevron-down.svg);   /* добовляем произвольное изображение */
+/*		background-image: url(img/chevron-down.png);
+/*		//background-color: #c7b39b; /* Цвет фона */
+/*	}
 /*Контейнер3 столбец1*/
 
 .formElements__layout3__pad1{

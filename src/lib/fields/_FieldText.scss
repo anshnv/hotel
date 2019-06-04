@@ -1,0 +1,20 @@
+input[name="text"] {
+	height: $FieldTextHeght; /* высота на свое усмотрение*/
+	width: $FieldTextWidth; /*ширина на свое усмотрение*/
+	padding-left: 0.7rem;
+	color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
+	font-size: 0.7rem; /*Размер шрифта*/
+	/*line-height: 2.2rem;*/
+	font-family: Montserrat; /*Стиль шрифта*/
+	//background-image: url(img/chevron-down.svg);
+}
+input{
+	height: $FieldTextHeght; /* высота на свое усмотрение*/
+	width: $FieldDropdowWidth; /*ширина на свое усмотрение*/
+	padding-left: 0.7rem;
+	color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
+	font-size: 0.7rem; /*Размер шрифта*/
+	/*line-height: 2.2rem;*/
+	font-family: Montserrat; /*Стиль шрифта*/
+	//background-image: url(img/chevron-down.svg);
+}

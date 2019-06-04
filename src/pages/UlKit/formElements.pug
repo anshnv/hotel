@@ -6,20 +6,18 @@ include ../../lib/fields/_mix-fieldText
 	.formElements__layout3
 		.formElements__layout3__pad1
 			.formElements__layout3__column
-				+fieldText('Text Field', 'Default', 'text', 'email', 'Email')
+				+fieldsText('Text Field', 'Default')
+				+fieldText('text', 'text', 'Email', '$FieldTextWidth')
 				.formElements__layout3__pad1-bott
-				+fieldText('Text Field', 'Hover/Focus', 'text', '', 'This is pretty awesome')
+				+fieldsText('Text Field', 'Hover/Focus')
+				+fieldText('text', 'text', 'This is pretty awesome', '$FieldTextWidth')
 				.formElements__layout3__pad1-bott
-				+fieldSelect('Dropdown', 'Default', 'Сколько гостей', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-				//.layoutText
-				//	.text_H3 Dropdown
-				//	.text_H3-normal.layoutTextDef Default
-				//select
-				//	option(value='Сколько гостей') Сколько гостей
-				//	-
-				//		var gasts = [1, 2, 3]
-				//	each foption in gasts
-				//		option.value=foption
+				+fieldsText('Dropdown', 'Default')
+				//.layoutFieldDropdown
+					//+fieldText('text', 'dropdown', 'Сколько гостей', '$FieldDropdowWidth')
+					//button(type="button").material-icons expand_more
+				+fieldDropdown('button')
+				
 		.formElements__layout3__pad2
 			.formElements__layout3__column
 				p colomn2
