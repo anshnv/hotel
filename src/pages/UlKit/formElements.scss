@@ -9,6 +9,8 @@
 	justify-content: space-between;
 	background: yellow;/*$PageBackground;*/
 	width: 72rem;	
+	padding-left: 1.5rem;
+	padding-top: 1.5rem;
 }
 .pageMarginBot{
 	height:1.4925373134rem;
@@ -42,12 +44,17 @@ select {
 	font-size: 0.7rem; /*Размер шрифта*/
 	/*line-height: 2.2rem;*/
 	font-family: Montserrat; /*Стиль шрифта*/
+	-webkit-appearance: none; 
+	-moz-appearance: none;
+	appearance: none;       /* удаляем стандартную стрелочку */
+	background-image: url(img/vectorFieldBut1.svg);   /* добовляем произвольное изображение */
+	//background-color: #c7b39b; /* Цвет фона */
 }
 /*Контейнер3 столбец1*/
 
 .formElements__layout3__pad1{
-	padding-left: 7.05rem;/*141px*/
-	padding-top: 1.6rem;/*143px*/
+	padding-left: 5.55rem;/*141px*/
+	padding-top: 3.1rem;/*143px*/
 }
 .formElements__layout3__pad1-bott{
 	padding-bottom: 0.8rem;/*227.44px-176px-18px*/

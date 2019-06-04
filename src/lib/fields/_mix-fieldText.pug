@@ -11,8 +11,6 @@ mixin fieldSelect(ftext1, ftext2, ftextDefault, foptions)
 		.text_H3= ftext1
 		.text_H3-normal.layoutTextDef= ftext2
 	select
-		option(disabled=ftextDefault)
-		-
-		var foptions = ['1']
+		option(value= ftextDefault)= ftextDefault
 		each foption in foptions
-			option(value=foption) -
+			option.value= foption

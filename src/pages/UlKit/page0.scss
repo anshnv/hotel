@@ -4,9 +4,13 @@
 .ColorsType{
 	background: yellow;/*$PageBackground;*/
 	width: 72rem;
+	padding-left: 1.5rem;
+	padding-top: 1.5rem;
+	//padding-bottom: 1.81rem;
 }
 .padBotVect{
-	padding-bottom: 1.81rem;
+	padding-top: 3.3rem;
+	//padding-bottom: 2rem;
 }
 /*@font-face{
     font-family: 'Quicksand-Bold';
@@ -41,7 +45,7 @@
 	//background: green;
 	//padding-bottom: 15rem;
 	width: 13.3rem; /*269.26px+149.74px*/
-	padding-left: 7.5rem; /*149.74px*/
+	padding-left: 6rem; /*149.74px-30px*/
 	//padding-top: 1rem;
 }
 .layout1__layoutRectangle{
@@ -112,7 +116,7 @@
 	//background: blue;
 	padding-bottom: 11.2rem;
 	//width: 33rem;
-	padding-right: 9.59rem;
+	padding-right: 11.15rem;
 	
 }
 .layout2__style{

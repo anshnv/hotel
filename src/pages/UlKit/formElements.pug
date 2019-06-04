@@ -1,7 +1,8 @@
 include ../../lib/fields/_mix-fieldText
 
 .formElements
-	embed(src='img/vector.svg' alt='text' height="106" width="106")
+	//embed(src='img/vector.svg' alt='text' height="106" width="106")
+	embed(src='img/vectorBase.svg' alt='text' height="48" width="48")
 	.formElements__layout3
 		.formElements__layout3__pad1
 			.formElements__layout3__column
@@ -10,6 +11,15 @@ include ../../lib/fields/_mix-fieldText
 				+fieldText('Text Field', 'Hover/Focus', 'text', '', 'This is pretty awesome')
 				.formElements__layout3__pad1-bott
 				+fieldSelect('Dropdown', 'Default', 'Сколько гостей', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+				//.layoutText
+				//	.text_H3 Dropdown
+				//	.text_H3-normal.layoutTextDef Default
+				//select
+				//	option(value='Сколько гостей') Сколько гостей
+				//	-
+				//		var gasts = [1, 2, 3]
+				//	each foption in gasts
+				//		option.value=foption
 		.formElements__layout3__pad2
 			.formElements__layout3__column
 				p colomn2
