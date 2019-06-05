@@ -2,19 +2,31 @@ input[name="text"] {
 	height: $FieldTextHeght; /* высота на свое усмотрение*/
 	width: $FieldTextWidth; /*ширина на свое усмотрение*/
 	padding-left: 0.7rem;
+	border: 1px solid $DarkShade25;
 	color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
 	font-size: 0.7rem; /*Размер шрифта*/
 	/*line-height: 2.2rem;*/
 	font-family: Montserrat; /*Стиль шрифта*/
-	//background-image: url(img/chevron-down.svg);
 }
 input{
 	height: $FieldTextHeght; /* высота на свое усмотрение*/
 	width: $FieldDropdowWidth; /*ширина на свое усмотрение*/
 	padding-left: 0.7rem;
+	border: 1px solid $DarkShade25;
+	border-right: 0px;
 	color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
 	font-size: 0.7rem; /*Размер шрифта*/
 	/*line-height: 2.2rem;*/
 	font-family: Montserrat; /*Стиль шрифта*/
-	//background-image: url(img/chevron-down.svg);
+}
+input[name="data"]{
+	height: $FieldTextHeght; /* высота на свое усмотрение*/
+	width: $FieldDataWidth; /*ширина на свое усмотрение*/
+	padding-left: 0.7rem;
+	border: 1px solid $DarkShade25;
+	border-right: 0px;
+	color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
+	font-size: 0.7rem; /*Размер шрифта*/
+	/*line-height: 2.2rem;*/
+	font-family: Montserrat; /*Стиль шрифта*/
 }

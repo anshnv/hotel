@@ -7,17 +7,16 @@ include ../../lib/fields/_mix-fieldText
 		.formElements__layout3__pad1
 			.formElements__layout3__column
 				+fieldsText('Text Field', 'Default')
-				+fieldText('text', 'text', 'Email', '$FieldTextWidth')
+				+fieldText('text', 'text', 'Email')
 				.formElements__layout3__pad1-bott
 				+fieldsText('Text Field', 'Hover/Focus')
-				+fieldText('text', 'text', 'This is pretty awesome', '$FieldTextWidth')
+				+fieldText('text', 'text', 'This is pretty awesome')
 				.formElements__layout3__pad1-bott
 				+fieldsText('Dropdown', 'Default')
-				//.layoutFieldDropdown
-					//+fieldText('text', 'dropdown', 'Сколько гостей', '$FieldDropdowWidth')
-					//button(type="button").material-icons expand_more
 				+fieldDropdown('button')
-				
+				.formElements__layout3__pad1-bott
+				+fieldsText('masked text field', 'Default')
+				+fieldText('date', 'text', 'ДД.ММ.ГГГГ')
 		.formElements__layout3__pad2
 			.formElements__layout3__column
 				p colomn2

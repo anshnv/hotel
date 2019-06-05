@@ -2,6 +2,9 @@ button[type="button"]{
 	//height: $FieldTextBut; /* высота на свое усмотрение*/
 	width: $FieldTextBut; /*ширина на свое усмотрение*/
 	color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
+	background:$PageBackground;
+	border: 1px solid $DarkShade25;
+	border-left: 0px;
 	/*padding-left: 0.7rem;
 	/*color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
 	/*font-size: 0.7rem; /*Размер шрифта*/
