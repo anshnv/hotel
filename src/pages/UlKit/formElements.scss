@@ -29,6 +29,16 @@
 	display: flex; 
 	flex-direction: column;
 }
+.formElements__layoutDate{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: none;
+	justify-content: space-between;
+	width: $FieldTextWidth;
+}
+.formElements__layoutDate-padding-right{
+	padding-right: 2.6rem;
+}
 /*input[type="text"] {
 	height: 2.2rem; /* высота на свое усмотрение*/
 	/*width: 16rem; /*ширина на свое усмотрение*/
@@ -62,6 +72,9 @@
 }
 .formElements__layout3__pad1-bott{
 	padding-bottom: 0.8rem;/*227.44px-176px-18px*/
+}
+.formElements__layout3__pad1-bottDate{
+	padding-bottom: 1rem;
 }
 /*________________________________________Контейнер3 столбец1*/
 

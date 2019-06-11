@@ -16,7 +16,12 @@ mixin fieldSelect(ftext1, ftext2, ftextDefault, foptions)
 		each foption in foptions
 			option.value= foption
 			
-mixin fieldDropdown(ftype)
+//mixin fieldDropdown(ftype)
+	//.layoutFieldDropdown
+		//+fieldText('text', 'large-button', 'Сколько гостей')
+		//button(type=ftype).material-icons expand_more
+		
+mixin fieldTextButton(ftype, fname, ftextDefault)
 	.layoutFieldDropdown
-		+fieldText('text', 'dropdown', 'Сколько гостей', '$FieldDropdowWidth')
+		+fieldText('text', fname, ftextDefault)
 		button(type=ftype).material-icons expand_more
