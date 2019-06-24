@@ -10,16 +10,20 @@ input{
 }
 input[name="large"] {
 	width: $FieldTextWidth; /*ширина на свое усмотрение*/
+	border-radius: 0.2rem;
 }
 input[name="large-button"]{
-	width: $FieldLarge-buttonWidth; /*ширина на свое усмотрение*/	
+	width: $FieldLarge-buttonWidth; /*ширина на свое усмотрение*/
+	border-radius: 0.2rem 0rem 0rem 0.2rem;	
 	border-right: 0px;
 }
 input[name="small-button"]{
 	width: $FieldSmall-buttonWidth;/*ширина на свое усмотрение*/
 	border-right: 0px;
+	border-radius: 0.2rem 0rem 0rem 0.2rem;
 }
 input[name="middle-button"]{
 	width: $FieldMiddle-buttonWidth; /*ширина на свое усмотрение*/
 	border-right: 0px;
+	border-radius: 0.2rem 0rem 0rem 0.2rem;
 }
