@@ -15,3 +15,9 @@ import './index.scss'
 //img.src = Icon
 //element.appendChild(img)
 //require('../dist/index.html');
+import $ from 'jquery';
+ 
+global.jQuery = $;
+global.$ = $;
+
+//require("inputmask/dist/inputmask/jquery.inputmask.js");

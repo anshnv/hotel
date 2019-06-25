@@ -3,6 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 //const { VueLoaderPlugin } = require('vue-loader')
+const webpack = require('webpack')
+const HtmlWebpackExternalsPlugin = require ('html-webpack-externals-plugin')
 
 const PATHS = {
   src: path.join(__dirname, '../src'),
@@ -114,8 +116,32 @@ module.exports = {
       filename: 'index.html'
     }),
     new CopyWebpackPlugin([
-      { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
+      { from: `${PATHS.src}/img`, to: `${PATHS.dist}/img` },
       { from: `${PATHS.src}/static`, to: '' },
-    ])
-  ],
+	  { from: `${PATHS.src}/fonts`, to: `${PATHS.dist}/css/fonts` },
+    ]),
+	new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
+	//new HtmlWebpackPlugin(),
+	//new HtmlWebpackExternalsPlugin({ // optional plugin: inject cdn
+      //externals: [
+        //{
+            //module: 'jquery',
+            //entry: 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'
+        //}
+      //],
+	//new HtmlWebpackExternalsPlugin({ // optional plugin: inject cdn
+      //externals: [
+        //{
+            //module: 'jquery',
+            //entry: 'dist/jquery.min.js',
+			//global: 'jQuery',
+        //}
+      //]
+    //})
+  ]
+  
 }

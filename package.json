@@ -41,6 +41,9 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "git": "^0.1.5",
+    "html-webpack-externals-plugin": "^3.8.0",
+    "jquery": "^3.4.1",
     "material-design-icons": "^3.0.1",
     "vue": "^2.6.8",
     "vuex": "^3.1.0"
