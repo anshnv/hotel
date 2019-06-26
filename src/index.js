@@ -16,8 +16,13 @@ import './index.scss'
 //element.appendChild(img)
 //require('../dist/index.html');
 import $ from 'jquery';
- 
+window.$ = window.jQuery = $;
 global.jQuery = $;
 global.$ = $;
 
-//require("inputmask/dist/inputmask/jquery.inputmask.js");
+require('webpack-jquery-ui');
+import 'jquery-ui/ui/widgets/datepicker.js';
+//var $ = require("jquery"),
+        //require("jquery-ui");
+				
+$('.datepicker').datepicker()

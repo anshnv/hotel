@@ -96,9 +96,13 @@ module.exports = {
 	]
   },
   //resolve: {
-    //alias: {
+  //  alias: {
+		// bind version of jquery-ui
+		//"jquery-ui": "jquery-ui/jquery-ui.js",
+		// bind to modules;
+	//	modules: path.join(__dirname, "node_modules"),
     //  'vue$': 'vue/dist/vue.js'
-    //}
+  //  }
   //},
   plugins: [
     //new VueLoaderPlugin(),
@@ -118,12 +122,13 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/img`, to: `${PATHS.dist}/img` },
       { from: `${PATHS.src}/static`, to: '' },
-	  { from: `${PATHS.src}/fonts`, to: `${PATHS.dist}/css/fonts` },
+			//{ from: `${PATHS.src}/fonts`, to: `${PATHS.dist}/css/fonts` },
     ]),
 	new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      'window.jQuery': 'jquery'
+      'window.jQuery': 'jquery',
+			'window.$': 'jquery'
     }),
 	//new HtmlWebpackPlugin(),
 	//new HtmlWebpackExternalsPlugin({ // optional plugin: inject cdn
