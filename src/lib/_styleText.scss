@@ -1,4 +1,4 @@
-@import 'mix';
+@import 'mixStyleText';
 .text_H1{
 @include StyleText(Montserrat, semi-expanded, bold, 1.145rem, 1.6rem);
 }
