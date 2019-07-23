@@ -8,21 +8,20 @@ import './index.scss'
 // PUG 
 //import './pug/main.pug'
 
-//import img
-//import Icon from './icon.png'
-
-//const img = new Image()
-//img.src = Icon
-//element.appendChild(img)
-//require('../dist/index.html');
 import $ from 'jquery';
 window.$ = window.jQuery = $;
 global.jQuery = $;
 global.$ = $;
 
-require('webpack-jquery-ui');
-import 'jquery-ui/ui/widgets/datepicker.js';
+//require('webpack-jquery-ui');
+//import 'jquery-ui/ui/widgets/datepicker.js';
 //var $ = require("jquery"),
         //require("jquery-ui");
 				
-$('.datepicker').datepicker()
+//$('.datepicker').datepicker({inline: true})
+//$('. my-element').datepicker({inline: true})
+
+//import airDatapicker from 'air-datepicker';
+
+import 'air-datepicker/dist/css/datepicker.min.css'
+import 'air-datepicker/dist/js/datepicker.min.js'
