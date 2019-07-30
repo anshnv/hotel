@@ -1,0 +1,26 @@
+/*@import '_StyleText';
+input[type='checkbox'] {
+  display: none;
+}
+fieldset{
+	width: 222px;
+	border: 2px;
+	display:flex;
+	flex-direction:сolumn;
+}
+.fieldset-line{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	flex-wrap:nowrap;
+}
+lable{
+	width: 1rem;
+	height: 1rem;
+	border: 1px black;
+}
+.color{
+	color: $DarkShade50;
+}
+/*.md-dark { color: rgba(0, 0, 0, 0.54); }
+.md-inactive { color: rgba(0, 0, 0, 0.26); }*/

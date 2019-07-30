@@ -21,7 +21,12 @@ mixin fieldSelect(ftext1, ftext2, ftextDefault, foptions)
 		//+fieldText('text', 'large-button', 'Сколько гостей')
 		//button(type=ftype).material-icons expand_more
 		
-mixin fieldTextButton(ftype, fname, ftextDefault)
+mixin fieldTextButtonDown(ftype, fname, ftextDefault)
 	.layoutFieldDropdown
 		+fieldText('text', fname, ftextDefault)
 		button(type=ftype).material-icons expand_more
+		
+mixin fieldTextButtonRight(ftype, fname, ftextDefault)
+	.layoutFieldDropdown
+		+fieldText('text', fname, ftextDefault)
+		button(type=ftype).material-icons arrow_forward		

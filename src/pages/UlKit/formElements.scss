@@ -40,43 +40,86 @@
 .formElements__layoutDate-padding-right{
 	padding-right: 2.6rem;
 }
-/*input[type="text"] {
-	height: 2.2rem; /* высота на свое усмотрение*/
-	/*width: 16rem; /*ширина на свое усмотрение*/
-	/*padding-left: 0.7rem;
-	/*color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
-	/*font-size: 0.7rem; /*Размер шрифта*/
-	/*line-height: 2.2rem;*/
-	/*font-family: Montserrat; /*Стиль шрифта*/
-	/*background-image: url(img/chevron-down.svg);
-}*/
-/*select {
-/*	height: 2.2rem; /* высота на свое усмотрение*/
-/*	width: 16rem; /*ширина на свое усмотрение*/
-/*	padding-left: 0.7rem;
-/*	color: $DarkShade25; /*цвет шрифта в обычном состоянии*/
-/*	font-size: 0.7rem; /*Размер шрифта*/
-	/*line-height: 2.2rem;*/
-/*		font-family: Montserrat; /*Стиль шрифта*/
-/*		-webkit-appearance: none; 
-/*		-moz-appearance: none;
-	appearance: none;       /* удаляем стандартную стрелочку */
-/*		//background-image: url(img/chevron-down.svg);   /* добовляем произвольное изображение */
-/*		background-image: url(img/chevron-down.png);
-/*		//background-color: #c7b39b; /* Цвет фона */
-/*	}
-/*Контейнер3 столбец1*/
+
 
 .formElements__layout3__pad1{
 	padding-left: 5.55rem;/*141px*/
 	padding-top: 3.1rem;/*143px*/
 }
+
+.checkbox-pad{
+	//padding-left: 0.78rem;
+	padding-bottom: 0.19rem;
+}
 .formElements__layout3__pad1-bott{
-	padding-bottom: 0.8rem;/*227.44px-176px-18px*/
+	padding-bottom: 0.85rem;/*227.44px-176px-18px*/
 }
 .formElements__layout3__pad1-bottDate{
-	padding-bottom: 1rem;
+	padding-bottom: 0.9rem;
 }
+input[type='checkbox'] {
+  display: none;
+}
+.formElements__layout3__pad12{
+	padding-left: 6.33rem;
+	padding-top: 3.1rem;/*143px*/
+}
+.formElements__layout3__pad-buttons{
+	padding-left: 5.55rem;
+	//padding-top: 3.1rem;/*143px*/
+}
+fieldset{
+	display:flex;
+	flex-direction:сolumn;
+	width: 11.2rem; /*222px*/
+	border: 0px;
+	padding-left: 0px;
+	margin-left: -4.1px
+}
+.fieldset-line{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-tems: flex-start;
+	flex-wrap:nowrap;
+	//height: 0.9rem;
+	margin-bottom: 0.05rem;
+	
+}
+.line{
+	line-height: 0.89rem;
+}
+//.layout-checkbox{
+	//display:flex;
+	//width: 1rem;
+	//height: 1rem;
+	//border: 1px black;
+//}
+.md-dark { color: rgba(0, 0, 0, 0.54); }
+.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.md-light { 
+	color: rgba(255, 255, 255, 1);
+	background: 1px $DarkShade50;
+	//border: $DarkShade50;
+}
+.md-light_blank { 
+	color: $DarkShade50;
+	//background: white;
+	
+}
+.md-size{
+	width: 1.2rem;
+	height: 1.15rem;
+	padding-right: 0.05rem;
+	margin-right: 0.4rem;
+	margin-bottom: 0.36rem;
+} 
+
+.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.color{
+	color: $DarkShade50;
+}
+
 /*________________________________________Контейнер3 столбец1*/
 
 /*Контейнер3 столбец2*/

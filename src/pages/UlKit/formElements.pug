@@ -1,35 +1,54 @@
 include ../../lib/fields/_mix-fieldText
-
+include ../../lib/checkbox/_mix-checkboxButtons
 .formElements
 	
 	//embed(src='img/vector.svg' alt='text' height="106" width="106")
 	embed(src='img/vectorBase.svg' alt='text' height="48" width="48")
 	.formElements__layout3
 		.formElements__layout3__pad1
+			//		Text Field	begin
 			.formElements__layout3__column
 				+fieldsText('Text Field', 'Default')
 				+fieldText('text', 'large', 'Email')
 				.formElements__layout3__pad1-bott
 				+fieldsText('Text Field', 'Hover/Focus')
 				+fieldText('text', 'large', 'This is pretty awesome')
+				//		Text Field	end				
 				.formElements__layout3__pad1-bott
 				+fieldsText('dropdown', 'Default')
-				+fieldTextButton('button','large-button', 'Сколько гостей')
+				+fieldTextButtonDown('button','large-button', 'Сколько гостей')
+				//		Dropdown	end				
 				.formElements__layout3__pad1-bott
 				+fieldsText('masked text field', 'Default')
 				+fieldText('date', 'large', '')
+				//		Masked Text Field	end				
 				.formElements__layout3__pad1-bott
 				.formElements__layout3__pad1-bottDate
+				//	  Date Dropdown	begin						
 				.formElements__layout3
 					.formElements__layoutDate-padding-right
 						+fieldsText('date dropdown', '')
 					+fieldsText('date dropdown', '')
 				.formElements__layoutDate
-					+fieldTextButton('button', 'small-button', 'ДД.ММ.ГГГ')
-					+fieldTextButton('button', 'small-button', '19.08.2019')
-		.formElements__layout3__pad2
+					+fieldTextButtonDown('button', 'small-button', 'ДД.ММ.ГГГ')
+					+fieldTextButtonDown('button', 'small-button', '19.08.2019')
+				//	  Date Dropdown	end		
+				.formElements__layout3__pad1-bott
+				.formElements__layout3__pad1-bottDate
+				+fieldsText('filter date dropdown', '')
+				+fieldTextButtonDown('button','middle-button', '19авг - 23авг')
+				//		Filter Date Dropdown	end	
+				.formElements__layout3__pad1-bott
+				.formElements__layout3__pad1-bottDate
+				+fieldsText('subscription text field', '')
+				+fieldTextButtonRight('button','middle-button', 'Email')
+				//		Filter Date Dropdown	end
+		.formElements__layout3__pad12
 			.formElements__layout3__column
-				p colomn2
+			.text_H3.checkbox-pad CHECKBOX BUTTONS
+			.formElements__layout3__pad-buttons
+			+	checkboxButtons(chname, 'Можно курить', 'Можно с питомцами','Можно пригласить гостей (до 10 человек)')
+			p colomn2
 		.formElements__layout3__pad3
 			.formElements__layout3__column
 			p colomn3
