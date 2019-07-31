@@ -1,19 +1,24 @@
-mixin checkboxButtons(chname, chvalue1, chvalue2, chvalue3)
+mixin checkboxButtons(chvalue1, chvalue2, chvalue3)
 	fieldset
+		
+		lable
+			.fieldset-line
+				.md-mag.material-icons checkbox_marked_outline
+					input(type='checkbox' id='check1')
+				.text_body.color.line=chvalue1
+				
+		label
+			.fieldset-line
+				.md-mag.material-icons checkbox_marked_outline
+					input(type='checkbox' id='check2')
+				.text_body.color.line=chvalue2
+				script
+					document.getElementById('check2').indeterminate = true
+			
 		.fieldset-line
-			input(type='checkbox' id='check1' name=chname value=chvalue1)
-			//label(for='check1')
-			//.layout-checkbox
-			//.material-icons.md-light.md-size check_box
-			.material-icons.md-light_blank.md-size check_box_outline_blank
-			.text_body.color.line=chvalue1
-		.fieldset-line
-			input(type='checkbox' id='check2' name=chname value=chvalue2)
-			.material-icons.md-light.md-size check_box
-			//.material-icons.md-light_blank.md-size check_box_outline_blank
-			.text_body.color.line=chvalue2
-		.fieldset-line
-			input(type='checkbox' id='check3' name=chname value=chvalue3)
-			.material-icons.md-light.md-size check_box
-			//.material-icons.md-light_blank.md-size check_box_outline_blank
+			label
+				.md-mag.material-icons checkbox_marked_outline
+					input(type='checkbox' id='check3')
+			script
+				document.getElementById('check3').indeterminate = true
 			.text_body.color.line=chvalue3

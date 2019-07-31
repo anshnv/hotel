@@ -1,0 +1,56 @@
+mixin checkboxButtons(chvalue1, chvalue2, chvalue3)
+	fieldset
+		.fieldset-line
+			label
+			//.md-mag.rect
+				.md-mag.material-icons.md-light checkbox_marked_outline
+					input(type='checkbox' id='check1')
+					script
+						//var checkbox=document.getElementByID('check1')
+						//if (checked == true)
+							//.material-icons.md-light checkbox_marked_outlined
+						//if (checked == false)
+						//.rect.md-mag
+						//else .rect.md-mag
+					//label(for='check1')
+					//.material-icons.md-light.md-mag check_box
+					//.material-icons.md-light_blank.md-size check_box_outline_blank
+					//.rect.md-mag
+						//label(for='check1')
+					//script
+						document.getElementByName('input')[10].indeterminate = true
+					//-if (checkbox.checked){
+					//.rect.md-mag
+						//.material-icons.md-light checkbox_marked_outlined
+					//-}
+					//-if (!checkbox.checked){
+					//.rect.md-size
+					//-}	
+					//.rect.md-size
+				.text_body.color.line=chvalue1
+		.fieldset-line
+			label
+				.md-mag.md-light.material-icons checkbox_marked_outline
+					input(type='checkbox' id='check2')
+					script
+						if (checked == true)
+							.material-icons.md-light checkbox_marked_outlined
+							alert('Привет, Мир!')
+						if (checked == false)
+						.rect.md-mag
+						alert('Привет, Мир!')
+					//-if (checked == false){
+					//.rect.md-mag
+					//-}
+					//label(for='check2')
+					//.material-icons.md-light_blank.md-size check_box_outline_blank
+			.text_body.color.line=chvalue2
+		.fieldset-line
+			label
+				.md-mag.md-light.material-icons checkbox_marked_outline
+					input(type='checkbox' id='check3')
+			//.rect.md-size
+			//.material-icons.md-light checkbox_marked_outline
+			//.material-icons.md-light.md-size check_box
+			//.material-icons.md-light_blank.md-size check_box_outline_blank
+			.text_body.color.line=chvalue3
