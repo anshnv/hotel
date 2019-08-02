@@ -2,7 +2,20 @@
 input[type='checkbox'] {
   display: none;
 }
-
+//input[type='checkbox']:checked{
+	//border: 0.1rem solid $DarkShade50;
+	//width: 0.9rem;
+	//height: 0.9rem;
+	//border-radius: 0.2rem;
+//}
+//input[type='checkbox']:checked {background: white;}
+//:indeterminate{
+  //border: 0.1rem solid $DarkShade50;
+	//width: 0.9rem;
+	//height: 0.9rem;
+	//border-radius: 0.2rem;
+	//background: white;
+   //}
 fieldset{
 	display:flex;
 	flex-direction:сolumn;
@@ -17,7 +30,9 @@ fieldset{
 	justify-content:flex-start;
 	align-tems: flex-start;
 	flex-wrap:nowrap;
+	//height: 0.9rem;
 	margin-bottom: 0.05rem;
+	//border: 0.1rem solid red;
 }
 .material-icons {
   font-family: 'Material Icons';
@@ -43,10 +58,16 @@ fieldset{
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+//lable{
+	//border: 0.1rem solid blue;
+	//width: 0.8rem;
+	//height: 0.8rem;
+	//border-radius: 0.2rem;
+	//display: none;
+//}
 
 .line{
 	line-height: 0.89rem;
-	margin-left: -1.65rem;
 }
 
 .md-border{
@@ -55,35 +76,61 @@ fieldset{
 	height: 0.9rem;
 	//border-radius: 0.2rem;
 	color: $DarkShade50;
+	//opacity: 1;
 	display: flex;
 }	
-
+//.md-dark { color: rgba(0, 0, 0, 0.54); }
+//.md-inactive { color: rgba(0, 0, 0, 0.26); }
+//.md-light { 
+	//color: rgba(255, 255, 255, 1);
+	//border: 0.1rem solid $DarkShade50;
+	//width: 0.9rem;
+	//height: 0.9rem;
+	//border-radius: 0.2rem;
+	//color: $DarkShade50;
+//}
+//.md-light_blank { 
+	//color: $DarkShade50;
+	//background: white;
+	
+//}
 .md-mag{
 	//padding-right: 0.4rem;
 	margin-right: 0.47rem;
 	margin-bottom: 0.36rem;
-	//padding-left: 0.2rem;
-	margin-left: 0.2rem;
 } 
-.rect{
-	border: 0.1rem solid $DarkShade50;
-	border-radius: 0.2rem;
-	width: 0.9rem;
-	height: 0.9rem;
-	opacity: 1;
-	display: flex;
-	position: relative;
-	z-index: 5;
-	left: -1.7rem;
-}
 
+//.md-inactive { color: rgba(255, 255, 255, 0.3); }
+//.color{
+	//color: $DarkShade50;
+//}
 input:checked + .div{
 	opacity: 1;
 }
 .div{
 	opacity: 0;
 }
-
+.rect{
+	border: 0.1rem solid $DarkShade50;
+	width: 0.9rem;
+	height: 0.9rem;
+	border-radius: 0.2rem;
+	opacity: 1;
+	display: flex;
+	position: relative;
+	z-index: 5;
+	left: -1.5rem;
+}
 .opacity{
 	opacity: 1;
+}
+//#check1:checked + .div[class='icon']{
+	//display: flex;
+//}
+//input[checked='checked']:before {
+	//content: 'f';
+	//background:red;
+//}
+.not-visible{
+	display: none;
 }

@@ -1,0 +1,60 @@
+mixin checkboxButtons(chvalue1, chvalue2, chvalue3)
+	fieldset
+		//label(for='check1')
+			//.fieldset-line
+				//.md-mag.material-icons checkbox_marked_outline
+				//.md-mag.rect
+				//input(type='checkbox' id='check1')
+				//.text_body.color.line=chvalue1
+		input(type='checkbox' id='check1')
+			//script.
+		-var checkbox=document.getElementById('check1')
+			
+		-var callback = function(){
+			input.oninput = function(){
+				if (checkbox.checked)
+					label(for='check1')
+						.fieldset-line
+							.md-mag.material-icons checkbox_marked_outline
+							.md-mag.rect.not-visible
+							input(type='checkbox' id='check1')
+							.text_body.color.line=chvalue1
+				else 
+					label(for='check1')
+						.fieldset-line
+							.md-mag.material-icons checkbox_marked_outline.not-visible
+							.md-mag.rect.not-visible
+							input(type='checkbox' id='check1')
+							.text_body.color.line=chvalue1
+			-}
+			-if (
+				document.readyState === 'complete' 
+				//||
+				//(document.readyState !== 'loading' && !document.documentElement.doScroll)
+				)
+			{
+				callback()
+			} 
+			else 
+			{
+				document.addEventListener("DOMContentLoaded", callback)
+			-}
+		label(for='check2')
+			.fieldset-line
+				.md-mag.material-icons checkbox_marked_outline
+				.md-mag.rect
+				input(type='checkbox' id='check2')
+				.text_body.color.line=chvalue2
+				script
+					document.getElementById('check2').indeterminate 
+			
+		label(for='check3')
+			.fieldset-line
+				.md-mag.material-icons checkbox_marked_outline
+				.md-mag.rect
+				input(type='checkbox' id='check3')
+				.text_body.color.line=chvalue3
+	
+		//if input.checked
+			//.rect.not-visible
+		

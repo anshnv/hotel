@@ -1,24 +1,25 @@
 mixin checkboxButtons(chvalue1, chvalue2, chvalue3)
 	fieldset
-		
-		lable
-			.fieldset-line
-				.md-mag.material-icons checkbox_marked_outline
-					input(type='checkbox' id='check1')
-				.text_body.color.line=chvalue1
-				
 		label
 			.fieldset-line
-				.md-mag.material-icons checkbox_marked_outline
-					input(type='checkbox' id='check2')
+				input(type='checkbox')
+				.div
+					.md-mag.material-icons.md-border checkbox_marked_outline
+				.md-mag.rect.opacity
+				.text_body.color.line=chvalue1
+					
+		label
+			.fieldset-line
+				input(type='checkbox' checked)
+				.div
+					.md-mag.material-icons.md-border checkbox_marked_outline
+				.md-mag.rect.opacity
 				.text_body.color.line=chvalue2
-				script
-					document.getElementById('check2').indeterminate = true
 			
-		.fieldset-line
-			label
-				.md-mag.material-icons checkbox_marked_outline
-					input(type='checkbox' id='check3')
-			script
-				document.getElementById('check3').indeterminate = true
-			.text_body.color.line=chvalue3
+		label
+			.fieldset-line
+				input(type='checkbox' checked)
+				.div
+					.md-mag.material-icons.md-border checkbox_marked_outline
+				.md-mag.rect.opacity
+				.text_body.color.line=chvalue3
