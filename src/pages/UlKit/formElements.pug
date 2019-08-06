@@ -46,13 +46,14 @@ include ../../lib/radio/_mix-radioButtons
 				//		Filter Date Dropdown	end
 		.formElements__layout3__pad12
 			.formElements__layout3__column
-			.text_H3.checkbox-pad CHECKBOX BUTTONS
+			.text_H3.pad-bottom CHECKBOX BUTTONS
 			.formElements__layout3__pad-buttons
 			+	checkboxButtons('Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)')
+			
 			//		Radio Buttons
-			.formElements__layout3__pad-top-text
-			.formElements__layout3__column
-			.text_H3.checkbox-pad Radio BUTTONS
+			
+			.formElements__layout3__column.formElements__layout3__pad-top-text
+			.text_H3.pad-bottom-raio Radio Buttons
 			+	radioButtons('Мужчина', 'Женщина')
 			p colomn2
 		.formElements__layout3__pad3
@@ -63,7 +64,8 @@ include ../../lib/radio/_mix-radioButtons
 			P контейнер 2 colomn1
 			
 			input(type='text' class='datepicker-here' data-position='right top')
-			.datepicker-here 
+			//.datepicker-here 
 			
 		.formElements__layout2__column
 			P контейнер 2 colomn2
+			.datepicker-here 

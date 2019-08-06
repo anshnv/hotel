@@ -1,17 +1,17 @@
 mixin radioButtons(chvalue1, chvalue2)
-	label
-		fieldset
-			.fieldset-line
-				input(type='radio' name='sex' checked)
-				.div(id='woman')
-					.md-mag.material-icons.md-border radio_button_checked
-				div(id='man')
-					.opacity.material-icons.md-border radio_button_unchecked
-				.text_body.md-color.line=chvalue1
-			.fieldset-line
-				input(type='radio' name='sex')
-				.div(id='woman')
-					.md-mag.material-icons.md-border radio_button_checked
-				.div(id='man')
-					.opacity.material-icons.md-border radio_button_unchecked
+	.fieldset-radio
+		.lable-man 
+			label
+				.fieldset-line-radio
+					input(type='radio' name='sex' id='man' checked)
+					.div(id='checked')
+						.woman.material-icons.md-border radio_button_checked
+					.man.opacity.material-icons.md-border radio_button_unchecked
+					.text_body.md-color.line=chvalue1
+		label
+			.fieldset-line-radio
+				input(type='radio' name='sex' id='woman')
+				.div(id='checked')
+					.woman.material-icons.md-border radio_button_checked
+				.man.opacity.material-icons.md-border radio_button_unchecked
 				.text_body.md-color.line=chvalue2

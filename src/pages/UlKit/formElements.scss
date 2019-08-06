@@ -4,6 +4,7 @@
 @import '../../lib/fields/mix-fieldText';
 @import '../../lib/fields/butFieldDropdown';
 @import '../../lib/checkbox/mix-checkboxButtons';
+@import '../../lib/radio/mix-radioButtons';
 /*@import '../../lib/fields/FieldText';/*
 /*@import '../../lib/fonts';*/
 .formElements{
@@ -48,9 +49,13 @@
 	padding-top: 3.1rem;/*143px*/
 }
 
-.checkbox-pad{
+.pad-bottom{
 	//padding-left: 0.78rem;
-	padding-bottom: 0.19rem;
+	padding-bottom: 0.17rem;
+}
+.pad-bottom-raio{
+	//padding-left: 0.78rem;
+	padding-bottom: 0.5rem;
 }
 .formElements__layout3__pad1-bott{
 	padding-bottom: 0.85rem;/*227.44px-176px-18px*/

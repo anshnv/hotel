@@ -1,32 +1,33 @@
 @import '../_styleText';
-input{
-  display: none;
+input[type='radio'] {
+ display: none;
 }
 
-fieldset{
-	display:flex;
-	flex-direction:row;
-	/*width: 30rem; /*222px*/
-	/*border: 0.1rem solid $DarkShade50;
-	padding-left: 0px;*/
-	margin-left: -1.1px
-}
-.fieldset-line{
+.fieldset-radio{
 	display:flex;
 	flex-direction:row;
 	justify-content:flex-start;
-	/*align-tems: flex-start;
-	//flex-wrap:nowrap;
-	//margin-bottom: 0.05rem;
-	//border: 0.1rem solid $DarkShade50;*/
+	flex-wrap:nowrap;
+	width: 12.15rem; /*222px*/
+	/*border: 0.1rem solid $DarkShade50;*/
+	padding-left: 0px;
+	margin-left: -4.1px
+}
+.fieldset-line-radio{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	/*align-tems: flex-start;*/
+	flex-wrap:nowrap;
+	margin-bottom: 0.05rem;
 }
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 2rem;  /* Preferred icon size 24px*/
+  font-size: 1.2rem;  /* Preferred icon size 24px*/
   display: inline-block;
-  line-height: 2.5rem;
+  line-height: 1.2rem;
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;
@@ -47,68 +48,48 @@ fieldset{
 
 .line{
 	line-height: 0.89rem;
-	/*margin-left: -1.65rem;*/
+	margin-left: -1.65rem;
 }
 
 .md-border{
 	/*border: 0.1rem solid $DarkShade50;
-	width: 0.9rem;
-	height: 0.9rem;
-	border-radius: 0.2rem;*/
+	width: 2rem;
+	height: 2rem;
+	//border-radius: 0.2rem;*/
 	color: $DarkShade50;
 	display: flex;
 }	
 
-.md-mag{
-	padding-right: 0.4rem;
-	margin-right: 0.47rem;
+.woman{
+	padding-right: 0.8rem;
+	/*margin-right: 0.47rem;
 	margin-bottom: 0.36rem;
-	padding-left: 0.2rem;
-	margin-left: 0.2rem;
+	padding-left: 0.2rem;*/
+	margin-left: 0.05rem;
+	/*display: flex;*/
+	position: relative;
+	z-index: 0;
 } 
-/*.rect{
-	//border: 0.1rem solid $DarkShade50;
-	//border-radius: 0.2rem;
-	//width: 0.9rem;
-	//height: 0.9rem;
-	//opacity: 1;
-	//display: flex;
-	//position: relative;
-	//z-index: 5;
-	//left: -1.7rem;
-}*/
-div{
-	display: flex;
-	padding-left: 3rem;
+.man{
+	padding-right: 0.7rem;
+	/*margin-right: 0.47rem;
+	margin-bottom: 0.36rem;
+	/*padding-left: 0.2rem;*/
+	/*display: flex;*/
+	position: relative;
+	z-index: 5;
+	left: -1.7rem;
+	
+} 
+.lable-man{
+	padding-right: 0.8rem;
 }
 
-
-input:checked + div{
+input:checked + .div{
 	opacity: 1;
 }
-div[id='woman']{
-	display: flex;
+.div{
 	opacity: 0;
-	z-index: 5;
-	position: relative;
-	/*left: 2rem;*/
-	margin-left: -2rem;
-}
-.#woman{
-	display: flex;
-	opacity: 0;
-	z-index: 5;
-	position: relative;
-	/*left: 2rem;*/
-	margin-left: -2rem;
-}
-.#man{
-	display: flex;
-	opacity: 1;
-	/*z-index: 5;*/
-	position: relative;
-	/*left: -2rem;*/
-	margin-left: -2rem;
 }
 
 .opacity{
