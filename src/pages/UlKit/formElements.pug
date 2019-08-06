@@ -1,5 +1,6 @@
 include ../../lib/fields/_mix-fieldText
 include ../../lib/checkbox/_mix-checkboxButtons
+include ../../lib/radio/_mix-radioButtons
 .formElements
 	
 	//embed(src='img/vector.svg' alt='text' height="106" width="106")
@@ -48,7 +49,11 @@ include ../../lib/checkbox/_mix-checkboxButtons
 			.text_H3.checkbox-pad CHECKBOX BUTTONS
 			.formElements__layout3__pad-buttons
 			+	checkboxButtons('Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)')
-			//-document.getElementById('check1').indeterminate = true
+			//		Radio Buttons
+			.formElements__layout3__pad-top-text
+			.formElements__layout3__column
+			.text_H3.checkbox-pad Radio BUTTONS
+			+	radioButtons('Мужчина', 'Женщина')
 			p colomn2
 		.formElements__layout3__pad3
 			.formElements__layout3__column
