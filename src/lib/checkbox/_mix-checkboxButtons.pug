@@ -1,13 +1,15 @@
 mixin checkboxButtons(chvalue1, chvalue2, chvalue3)
 	fieldset
-		label
-			.fieldset-line
-				input(type='checkbox')
-				.div
-					.md-mag.material-icons.md-border checkbox_marked_outline
-				.md-mag.rect.opacity
-				.text_body.color.line=chvalue1
+		each item in [chvalue1, chvalue2, chvalue3]
+			label
+				.fieldset-line
+					input(type='checkbox')
+					.div
+						.md-mag.material-icons.md-border checkbox_marked_outline
+					.md-mag.rect.opacity
+					.text_body.color.line=item
 					
+	// - 
 		label
 			.fieldset-line
 				input(type='checkbox' checked)
@@ -23,3 +25,4 @@ mixin checkboxButtons(chvalue1, chvalue2, chvalue3)
 					.md-mag.material-icons.md-border checkbox_marked_outline
 				.md-mag.rect.opacity
 				.text_body.color.line=chvalue3
+	//

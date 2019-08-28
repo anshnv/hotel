@@ -1,10 +1,12 @@
 include ../../lib/fields/_mix-fieldText
 include ../../lib/checkbox/_mix-checkboxButtons
 include ../../lib/radio/_mix-radioButtons
+include ../../lib/toggle/_mix-toggleButtons
 .formElements
 	
 	//embed(src='img/vector.svg' alt='text' height="106" width="106")
 	embed(src='img/vectorBase.svg' alt='text' height="48" width="48")
+	//embed(src='img/off.svg' alt='text')
 	.formElements__layout3
 		.formElements__layout3__pad1
 			//		Text Field	begin
@@ -52,9 +54,18 @@ include ../../lib/radio/_mix-radioButtons
 			
 			//		Radio Buttons
 			
-			.formElements__layout3__column.formElements__layout3__pad-top-text
+			.formElements__layout3__column.formElements__layout3__pad-top-text-radio
 			.text_H3.pad-bottom-raio Radio Buttons
 			+	radioButtons('Мужчина', 'Женщина')
+			
+			// Toggle
+			
+			.formElements__layout3__column.formElements__layout3__pad-top-text-toggle
+			.text_H3.pad-bottom-toggle toggle
+			//+	toggleButtons-svg('Получать спецпредложения')
+			.pad-bottom-toggle
+				+	toggleButtons('Получать спецпредложения')
+			
 			p colomn2
 		.formElements__layout3__pad3
 			.formElements__layout3__column
@@ -65,7 +76,8 @@ include ../../lib/radio/_mix-radioButtons
 			
 			input(type='text' class='datepicker-here' data-position='right top')
 			//.datepicker-here 
-			
+		// -	
 		.formElements__layout2__column
 			P контейнер 2 colomn2
-			.datepicker-here 
+			.datepicker-here
+		//

@@ -5,6 +5,7 @@
 @import '../../lib/fields/butFieldDropdown';
 @import '../../lib/checkbox/mix-checkboxButtons';
 @import '../../lib/radio/mix-radioButtons';
+@import '../../lib/toggle/mix-toggleButtons';
 /*@import '../../lib/fields/FieldText';/*
 /*@import '../../lib/fonts';*/
 .formElements{
@@ -53,10 +54,8 @@
 	//padding-left: 0.78rem;
 	padding-bottom: 0.17rem;
 }
-.pad-bottom-raio{
-	//padding-left: 0.78rem;
-	padding-bottom: 0.5rem;
-}
+
+
 .formElements__layout3__pad1-bott{
 	padding-bottom: 0.85rem;/*227.44px-176px-18px*/
 }
@@ -82,8 +81,20 @@
 	padding-left: 6.3rem;/*141px*/
 	padding-top: 0.5rem;/*141px*/
 }
-.formElements__layout3__pad-top-text{
-	padding-top: 1.3rem;/*143px*/
+.formElements__layout3__pad-top-text-radio{
+	padding-top: 1.1rem;/*143px*/
+}
+
+.formElements__layout3__pad-top-text-toggle{
+	padding-top: 1.7rem;/*143px*/
+}
+.pad-bottom-raio{
+	//padding-left: 0.78rem;
+	padding-bottom: 0.5rem;
+}
+.pad-bottom-toggle{
+	//padding-left: 0.78rem;
+	padding-bottom: -3.0rem;
 }
 /*________________________________________Контейнер3 столбец2*/
 

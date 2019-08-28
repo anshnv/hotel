@@ -1,0 +1,82 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+.switch input {
+    /* Вначале делаем его равным размеру контейнера, в котором он находится */
+	position: relative;
+	width: 100%;
+	height: 100%;
+    /* Затем, перемещаем его вверх, относительно других элементов */
+	z-index: 100;
+    /* Делаем его невидимым */
+	opacity: 1;
+    /* А это для эргономичности */
+	cursor: pointer;
+}
+.switch {
+	width: $ToggleWidth;
+	height: $ToggleHeight;
+	position: relative;
+}
+/*label будет контейнером для переключателя. 
+А тег <i> и будет фактически переключателем. 
+Поэтому тег label будет иметь только серый фон с тенями,
+*/
+.switch label {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: $PageBackground;
+	border-radius: 10px;
+	border: 1px solid $DarkShade50;
+}
+/*перейдем к самим переключателям
+Сделаем его блочным элементом, зададим ему высоту его родителя 
+и немного больше чем половину ширины родителя. 
+Поместим его слева от контейнера
+*/
+.switch label i {
+	display: block;
+	height: 60%;
+	width: $ToggleWidthSwitch;
+	height: $ToggleHeightSwitch;
+	position: absolute;
+	left: 0.18rem;
+	top: 0.18rem;
+	z-index: 2;
+	border-radius: inherit;
+	background: $DarkShade50; 
+}
+/*псевдо-элементом является слово "ON" или "OFF", 
+в зависимости от состояния кнопки*/
+/*.switch label i:before {
+content: "OFF";
+position: absolute;
+top: 50%;
+right: -50%;
+margin-top: -12px;
+color: $DarkShade75;
+
+}*/
+/*Когда кнопка "включена", изменяться будет: 
+	переключение позиции:*/
+/*.switch input:checked ~ label { 
+/* Background */
+    /*background: #9abb82;
+}*/
+ 
+.switch input:checked + label i { 
+/* Toggle */
+    left: auto;
+    right: -1%;
+		color: $DarkShade75;
+}
+/*.switch input:checked + label i:before { 
+/* On/off */
+   /* content: "On";
+    right: 115%;
+    color: #82a06a;
+}*/

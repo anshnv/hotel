@@ -8,15 +8,16 @@ input[type='radio'] {
 	flex-direction:row;
 	justify-content:flex-start;
 	flex-wrap:nowrap;
-	width: 12.15rem; /*222px*/
+	/*width: 5.15rem; /*222px*/
 	/*border: 0.1rem solid $DarkShade50;*/
-	padding-left: 0px;
+	/*padding-left: 0px;*/
 	margin-left: -4.1px
 }
 .fieldset-line-radio{
 	display:flex;
 	flex-direction:row;
 	justify-content:flex-start;
+	width: 5.1rem;
 	/*align-tems: flex-start;*/
 	flex-wrap:nowrap;
 	margin-bottom: 0.05rem;
@@ -25,9 +26,9 @@ input[type='radio'] {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 1.2rem;  /* Preferred icon size 24px*/
+  /*font-size: 1.2rem;  /* Preferred icon size 24px*/
   display: inline-block;
-  line-height: 1.2rem;
+  /*line-height: 1.2rem;*/
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;
@@ -45,18 +46,22 @@ input[type='radio'] {
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+.icons-radio{
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+}
 
-.line{
+/*.line-radio{
 	line-height: 0.89rem;
 	margin-left: -1.65rem;
-}
+}*/
 
 .md-border{
 	/*border: 0.1rem solid $DarkShade50;
 	width: 2rem;
 	height: 2rem;
 	//border-radius: 0.2rem;*/
-	color: $DarkShade50;
+	color: $DarkShade75;
 	display: flex;
 }	
 

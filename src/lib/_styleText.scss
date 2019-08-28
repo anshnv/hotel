@@ -14,5 +14,5 @@ text-transform: uppercase;
 text-transform: uppercase;
 }
 .text_body{
-@include StyleText(Montserrat, ultra-condensed, normal, 0.7rem, 1.5rem);
+@include StyleText(Montserrat, ultra-condensed, normal, 0.7rem, 1.0rem);
 }

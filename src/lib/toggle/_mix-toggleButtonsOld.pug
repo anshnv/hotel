@@ -1,0 +1,25 @@
+mixin toggleButtons-svg(text)
+	.fieldset-toggle
+		label
+			.fieldset-line-toggle
+				input(type='checkbox' id='toggle')
+				.div(id='on').md-color75
+					object(type="image/svg+xml" data="img/on.svg" width="48" height="48")
+				.opacity-half.md-color50
+					object(type="image/svg+xml" data="img/off.svg" width="48" height="48")
+		.text_body.color-text.line-toggle=text
+				
+mixin toggleButtons(text)
+	
+	.fieldset-toggle
+		label
+			.fieldset-line-toggle
+				input(type='checkbox' id='toggle')
+				.div(id='on')
+					.material-icons.md-color75.md-48 toggle_on
+			document.addEventListener('DOMContentLoaded', function(event){
+				var toggle=document.getElementById('toggle')
+				if (toggle.check)
+				.opacity-not.material-icons.md-color50.md-48 toggle_off_outline})
+				.opacity-half.material-icons.md-color50.md-48 toggle_off_outline
+		.text_body.color-text.line-toggle=text

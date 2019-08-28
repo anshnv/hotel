@@ -6,9 +6,8 @@ input[type='checkbox'] {
 fieldset{
 	display:flex;
 	flex-direction:сolumn;
-	width: 12.15rem; /*222px*/
+	width: 11rem; /*222px*/
 	border: 0px;
-	padding-left: 0px;
 	margin-left: -4.1px
 }
 .fieldset-line{
@@ -47,6 +46,7 @@ fieldset{
 .line{
 	line-height: 0.89rem;
 	margin-left: -1.65rem;
+	width: 10.75rem;
 }
 
 .md-border{
